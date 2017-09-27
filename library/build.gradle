@@ -1,0 +1,30 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "25.0.2"
+    lintOptions {
+        abortOnError false
+    }
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "0.0.1"
+
+    }
+
+}
+publish {
+    userOrg = 'gengqiquan'//bintray.com用户名
+    groupId = 'com.gengqiquan'//jcenter上的路径
+    artifactId = 'parrot'//项目名称
+    publishVersion = '0.0.1'//版本号
+    desc = ''//描述，不重要
+    website = 'https://github.com/gengqiquan/Parrot'
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.squareup.okhttp3:okhttp:latest.release'
+    compile 'com.squareup.okio:okio:latest.release'
+}
