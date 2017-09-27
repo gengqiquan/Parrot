@@ -1,5 +1,6 @@
 # Parrot
 mock webServer respone about okhttp3's request
+make your develop and debug convenient when only documents and api has not been released to the test server
 
 [English](https://github.com/gengqiquan/Parrot/blob/master/README_zh.md)
 
