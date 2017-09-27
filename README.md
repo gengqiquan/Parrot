@@ -1,7 +1,7 @@
 # Parrot
 mock webServer respone about okhttp3's request
 
-[English](https://github.com/gengqiquan/Parrot/blob/master/README_zh.md)
+[中文文档](https://github.com/gengqiquan/Parrot/blob/master/README_zh.md)
 
 # Start to use
 * create a mock class and define some methods that annotationed by  @MOCK
