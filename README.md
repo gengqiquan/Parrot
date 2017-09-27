@@ -2,7 +2,7 @@
 mock webServer respone about okhttp3's request
 make your develop and debug convenient when only documents and api has not been released to the test server
 
-[English](https://github.com/gengqiquan/Parrot/blob/master/README_zh.md)
+[中文文档](https://github.com/gengqiquan/Parrot/blob/master/README_zh.md)
 
 # Start to use
 * create a mock class and define some methods that annotationed by  @MOCK
