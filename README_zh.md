@@ -1,4 +1,4 @@
-# 鹦鹉
+# Parrot
 模拟服务器响应okhttp3的请求
 
 [English](https://github.com/gengqiquan/Parrot/blob/master/README.md)
