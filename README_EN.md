@@ -1,13 +1,13 @@
 # Parrot
-模拟服务器响应okhttp3的请求
+mock webServer respone about okhttp3's request
 
-方便只有文档而没有发布测试服务器的时候进行开发和调试
+make your develop and debug convenient when only documents and api has not been released to the test server
 
-[English](https://github.com/gengqiquan/Parrot/blob/master/README.md)
+[中文文档](https://github.com/gengqiquan/Parrot/blob/master/README_zh.md)
 
-# 开始使用
-* 创建一个类，然后定义一些注解了@MOCK的方法
-在方法内部根据request决定返回对应的数据
+# Start to use
+* create a mock class and define some methods that annotationed by  @MOCK
+return the result that you want
 
  ```
 
@@ -33,7 +33,7 @@ public class MockService {
     }
 }
 ```
-*  @MOCK的注解值：github_user_info 对应你需要模拟的方法的接口路径
+* the value of @MOCK :github_user_info is same as your api path
 ```
 
 public interface GithubService {
@@ -42,7 +42,7 @@ public interface GithubService {
 }
 ```
 
-* 只在DEBUG情况下添加 MockInterceptor，防止忘记移除方法影响生产环境
+* add the MockInterceptor while DEBUG
 ```
    OkHttpClient client = new OkHttpClient.Builder()
                 .retryOnConnectionFailure(true)
@@ -57,7 +57,7 @@ public interface GithubService {
         }
 ```
 
-* 获取你模拟的数据结果
+* get your mock result
 ```
   new Retrofit.Builder()
                 .baseUrl("http://www.github.api.com")
