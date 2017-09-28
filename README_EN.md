@@ -6,7 +6,8 @@ make your develop and debug convenient when only documents and api has not been 
 [中文文档](https://github.com/gengqiquan/Parrot/blob/master/README_zh.md)
 
 # Start to use
-* create a mock class and define some methods that annotationed by  @MOCK
+* create a mock class and define some methods that annotationed by  @MOCK("the path that you want to be mocked")
+
 return the result that you want
 
  ```

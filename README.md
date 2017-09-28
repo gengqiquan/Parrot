@@ -6,8 +6,9 @@
 [English](https://github.com/gengqiquan/Parrot/blob/master/README_EN.md)
 
 # 开始使用
-* 创建一个类，然后定义一些注解了@MOCK的方法
-在方法内部根据request决定返回对应的数据
+* 创建一个类，然后定义一些注解了@MOCK("需要被模拟的请求地址")的方法
+
+方法返回你需求要模拟的数据
 
  ```
 
